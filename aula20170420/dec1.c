@@ -1,9 +1,15 @@
 #include <stdio.h>
+void safeFlush()
+{
+    char c;
+    while((c = getchar()) != EOF && c != '\n');
+}
 int main ()
 {
     int n;
     printf("Digite um numero: ");
     scanf("%i",&n);
+    safeFlush();
     if(n%2==1)
         printf("O nuemro e' impar\n");
     else
