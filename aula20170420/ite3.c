@@ -8,6 +8,6 @@ int main()
     scanf("%s",palavra);
     while (palavra[i]!='\0')
         i++;
-    printf("A palavra tem %i\n",i);
+    printf("A primeira palavra tem %i letras\n",i);
     return 0;
 }
