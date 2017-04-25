@@ -12,6 +12,8 @@ int main ()
     printf("Digite um numero inteiro nao negativo: ");
     scanf("%u",&a);
     safeFlush();
+    if(a<0)
+    a=a*-1;
     b=rand()%10;
     c = a+b;
     printf("O seu numero, o numero sorteado e a soma deles sao,respectivamente: %u %i %i",a,b,c);
