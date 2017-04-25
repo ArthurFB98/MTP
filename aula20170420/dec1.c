@@ -11,7 +11,7 @@ int main ()
     scanf("%i",&n);
     safeFlush();
     if(n%2==1)
-        printf("O nuemro e' impar\n");
+        printf("O numero e' impar\n");
     else
         printf("O numero e' par\n");
     if(n%3==0)
