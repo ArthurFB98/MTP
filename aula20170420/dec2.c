@@ -16,8 +16,8 @@ int main ()
     c = a+b;
     printf("O seu numero, o numero sorteado e a soma deles sao,respectivamente: %u %i %i",a,b,c);
     if(c%2==0)
-        printf("\nO nuemro e' par\n");
+        printf("\nA soma e' par\n");
     else
-        printf("\nO numero e' impar\n");
+        printf("\nA soma e' impar\n");
     return 0;
 }
