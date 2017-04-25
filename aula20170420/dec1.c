@@ -10,10 +10,10 @@ int main ()
     printf("Digite um numero: ");
     scanf("%i",&n);
     safeFlush();
-    if(n%2==1)
-        printf("O numero e' impar\n");
-    else
+    if(n%2==0)
         printf("O numero e' par\n");
+    else
+        printf("O numero e' impar\n");
     if(n%3==0)
         printf("O numero e' multiplo de 3\n");
     if(n%5==0)
