@@ -10,7 +10,7 @@ int main()
     printf("Digite uma frase: ");
     fgets(frase,N,stdin);
     frase[strlen(frase)-1]='\0'; //tirar enter
-    for(i=0;i<strlen(frase);i++)
+    for(i=0;frase[i];i++)
         frase[i]=toupper(frase[i]);
     printf("\nO tamanho da string e' : %d\n",strlen(frase));
     if(strncmp(frase,"BOM DIA",7)==0)
