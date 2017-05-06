@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
-#define NCHAR 256
+#define N 256
 
 int main ()
 {
-    int i;
-    char frase[NCHAR];
+    int i, count=0;
+    char frase[N];
     printf("Digite uma frase: ");
-    fgets(frase,NCHAR,stdin);
-    for(i=0;frase[i]!='\0';i++) {}
-    i--;
-    printf("O numero de caracteres na frase e': %i\n",i);
+    fgets(frase,N,stdin);
+    for(i=0;i<strlen(frase);i++)
+        if(isalpha(frase[i])!=0)
+            count++;
+    printf("O numero de caracteres na frase e': %d\n",count);
     return 0;
 }
