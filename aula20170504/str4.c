@@ -15,12 +15,12 @@ int main()
     {
         frase[i]=toupper(frase[i]);
     if(frase[i]=='A')
-        frase[i]=='4';
+        frase[i]='4';
     if(frase[i]=='E')
         frase[i]='3';
     if(frase[i]=='I')
         frase[i]='1';
-    if(frase[i]=='O')
+    if(frase[i]=='o')
         frase[i]='0';
     if(frase[i]=='S')
         frase[i]='5';
