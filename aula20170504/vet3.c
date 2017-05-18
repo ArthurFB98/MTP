@@ -11,7 +11,7 @@ int main()
     for(j=0;j<10;j++)
         soma=vet[j]+soma;
     j--;
-    for(j;j>0;j--)
+    for(j;j>-1;j--)
         prod=vet[j]*prod;
     printf("\nO somatorio e o produtorio desses valores sao, respectivamente: %i, %i\n",soma,prod);
     return 0;
