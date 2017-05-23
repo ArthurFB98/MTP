@@ -1,18 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
 int main()
 {
-    float a,b,soma=0;
-    char *p;
-    char *q;
-    char *r;
-    printf("Digite dois numeros inteiros: ");
-    scanf("%f%f",&a,&b);
-    soma=a+b;
-    p=(char*)&a;
-    q=(char*)&b;
-    r=(char*)&soma;
-        printf("Endereco: %p | Contem %u\n",p,*(p));
-        return 0;
+    float x,y,soma;
+    printf("Digite dois numeros: ");
+    scanf("%f %f",&x,&y);
+    soma=x+y;
+    printf("O endereco de %g e' %p\n",x,&x);
+    printf("O endereco de %g e' %p\n",y,&y);
+    printf("O endereco de %g e' %p\n",soma,&soma);
+    return 0;
 }
