@@ -6,10 +6,10 @@ int main()
 {
     int i=0,vetor[]={0xFF,0xFFFF,0xFFFFFF,0xFFFFFFFF},count=0;
     unsigned char *p;
-    p=(char*)&vetor;
+    p=(unsigned char*)vetor;
     for(;i<sizeof(vetor);i++)
     {
-        printf("O conteudo em bytes do vetor: %u\n",p[i]);
+        printf("O conteudo em bytes do vetor: %X\n",p[i]);
         if(p[i]!=0x00)
             count++;
     }
