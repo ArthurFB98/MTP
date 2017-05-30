@@ -16,10 +16,11 @@ struct Pnt {
 
 main (){
     struct Pnt p1, p2, p3;
+    printf("Digite 2 pontos de cordenadas x e y: ");
     scanf ("%f %f %f %f", &p1.x, &p1.y, &p2.x, &p2.y);
-    printf ("com o printf (%f, %f)\n", p1.x+p2.x, p1.y+p2.y);
+    printf ("Com o printf (%g, %g)\n", p1.x+p2.x, p1.y+p2.y);
     SOMA(p1, p2, p3);
-    printf ("usando macro (%f, %f)\n", p3.x, p3.y);
-    printf ("%f\n",DISTANCIA(p1, p2));
+    printf ("Usando macro (%g, %g)\n", p3.x, p3.y);
+    printf ("%.4f\n",DISTANCIA(p1, p2));
 
 }
