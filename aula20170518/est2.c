@@ -26,6 +26,6 @@ int main() {
         mediay += pontos[i].y;
         mediaz += pontos[i].z;
     }
-    printf("Centro de massa: (%g, %g, %g)\n",mediax/numponto, mediay/numponto, mediay/numponto);
+    printf("Centro de massa: (%g, %g, %g)\n",mediax/numponto, mediay/numponto, mediaz/numponto);
     return 0;
 }
