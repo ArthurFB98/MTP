@@ -18,5 +18,5 @@ int main() {
 }
 
 void soma(struct N A,struct N B) {
-    printf("A resposta e': %d/%d",A.num*B.den+B.num*A.den,A.den*B.den);
+    printf("A resposta e': %d/%d\n",A.num*B.den+B.num*A.den,A.den*B.den);
 }
