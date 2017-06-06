@@ -13,7 +13,7 @@ int main() {
     printf("Digite dois numeros inteiros: ");
     scanf("%d%d",&N,&D);
     A=resquo(N,D);
-    printf("Quociente: %d\nResto: %d",A.Q,A.R);
+    printf("Quociente: %d\nResto: %d\n",A.Q,A.R);
     return 0;
 }
 
