@@ -5,7 +5,7 @@ void comp(int *A[],int *B[],int n,int m) {
     for(i=0;i<n;i++)
         for(j=0;j<m;j++)
         if(A[i]==B[j])
-        printf("%d ",A[i]);
+        printf("%d\n",A[i]);
 }
 
 int main() {
