@@ -13,15 +13,15 @@ int main() {
     if(c=='i') {
         printf("Digite um numero: ");
         scanf("%d",&U.f);
-        printf("%g",U.f);
+        printf("%g\n",U.f);
     }
     else
     if(c=='f') {
         printf("Digite um numero: ");
         scanf("%f",&U.i);
-        printf("%d",U.i);
+        printf("%d\n",U.i);
     }
     else
-        printf("Opcao invalida!");
+        printf("Opcao invalida!\n");
     return 0;
 }
