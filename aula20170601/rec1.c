@@ -18,5 +18,6 @@ int main() {
     fgets(frase,N,stdin);
     frase[strlen(frase)-1]='\0';
     inv(frase,i);
+    printf("\n");
     return 0;
 }
