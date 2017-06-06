@@ -22,6 +22,6 @@ int main() {
     C.G=(C.G)/255;
     C.B=(C.B)/255;
     R=Conv(C,C1);
-    printf("As cores convertidas sao: %g, %g, %g", round(R.G), round(R.B), round(R.R));
+    printf("As cores convertidas sao: %g, %g, %g\n", round(R.G), round(R.B), round(R.R));
     return 0;
 }
