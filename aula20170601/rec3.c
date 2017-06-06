@@ -10,13 +10,13 @@ struct N soma(struct N A,struct N B,struct N C);
 int mdc (int a, int b);
 
 int main() {
-    struct N A,B,R;
+    struct N A,B,C,R;
     printf("Digite o primeiro numero racional: ");
     scanf("%d/%d",&A.num,&A.den);
     printf("Digite o segundo numero racional: ");
     scanf("%d/%d",&B.num,&B.den);
-    soma(A,B,R);
-    printf("%d/%d",R.num/mdc(R.num,R.den),R.den/mdc(R.num,R.den));
+    R=soma(A,B,C);
+    printf("%d/%d\n",R.num/mdc(R.num,R.den),R.den/mdc(R.num,R.den));
     return 0;
 }
 
