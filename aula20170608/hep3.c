@@ -15,5 +15,6 @@ int main() {
     } while(c!='\\');
     texto[len-1]='\0'; //garantir que o final da string sera o \0
     printf("\n\n%s",texto);
+    free(texto);
     return 0;
 }
