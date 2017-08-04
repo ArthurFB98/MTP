@@ -1,16 +1,10 @@
 #include <stdio.h>
-void safeFlush()
-{
-    char c;
-    while((c = getchar()) != EOF && c != '\n');
-}
 int main()
 {
-    int a,cont=0;
+    int i,a,cont=0;
     printf("Digite um numero: ");
-    scanf("%i",&a);
-    safeFlush();
-    for(int i=1;i<=a;i++)
+    scanf("%d",&a);
+    for(i=1;i<=a;i++)
         if(a%i==0)
         cont++;
         if(cont==2)
